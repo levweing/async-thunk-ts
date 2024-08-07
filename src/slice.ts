@@ -23,7 +23,6 @@ const usersSlice = createSlice({
 
                 if (meta.aborted) {
                     state.isCanceled = true;
-                    console.log("Error:", error);
                 } else {
                     state.error = error.message;
                 }
